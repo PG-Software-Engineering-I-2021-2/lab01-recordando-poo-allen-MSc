@@ -6,14 +6,14 @@ public class Vehiculo {
     double capacidad;
     double cantidad;
 
-    Vehiculo(double _consumo, double _capacidad, double _cantidad){
-        consumo = _consumo;
-        capacidad = _capacidad;
-        cantidad = _cantidad;
+    Vehiculo(double consumo, double capacidad, double cantidad){
+        this.consumo = consumo;
+        this.capacidad = capacidad;
+        this.cantidad = cantidad;
     }
 
-    String viajar(double _kms) {
-        double consumoViaje = _kms * consumo;
+    String viajar(double kms) {
+        double consumoViaje = kms * consumo;
 
         double cantidadRemanente = cantidad - consumoViaje;
 
@@ -22,7 +22,7 @@ public class Vehiculo {
         }
 
         cantidad = cantidadRemanente;
-        return "Automóvil/Camión viajó " + _kms + " km y aún tiene " + String.format("%.2f", cantidadRemanente) + " de combustible.";
+        return "Automóvil/Camión viajó " + kms + " km y aún tiene " + String.format("%.2f", cantidadRemanente) + " de combustible.";
     }
 
     String reabastecer(double combustible) {

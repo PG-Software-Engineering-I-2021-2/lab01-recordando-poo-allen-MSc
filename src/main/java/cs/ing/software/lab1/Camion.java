@@ -2,8 +2,8 @@ package cs.ing.software.lab1;
 
 public class Camion extends Vehiculo{
 
-    Camion(double _consumo, double _capacidad, double _cantidad){
-        super(_consumo,_capacidad,_cantidad);
+    Camion(double consumo, double capacidad, double cantidad){
+        super(consumo,capacidad,cantidad);
     }
 
     @Override
