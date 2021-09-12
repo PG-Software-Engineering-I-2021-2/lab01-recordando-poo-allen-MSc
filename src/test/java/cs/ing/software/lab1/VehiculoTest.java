@@ -12,6 +12,12 @@ public class VehiculoTest {
     }
 
     @Test
+    public void Viajar40kmEnAuto(){
+        Automovil auto1 = new Automovil(0.9,100,10);
+        Assert.assertEquals(auto1.viajar(40), "Automóvil/Camión necesita reabastecimiento de combustible.");
+    }
+
+    @Test
     public void Viajar4kmEnCamion(){
         Camion camion = new Camion(1.6,100,10);
         Assert.assertEquals(camion.viajar(4), "Automóvil/Camión viajó 4.0 km y aún tiene 3.60 de combustible.");
