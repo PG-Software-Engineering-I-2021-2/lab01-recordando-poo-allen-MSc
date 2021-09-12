@@ -1,5 +1,6 @@
 ## maven
 target/
+*.iml
 
 ## IntelliJ IDEA
 .idea/
